@@ -1,0 +1,31 @@
+.navbar {
+  width: 80%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #121212;
+
+  h1 {
+    color: #995aff;
+    font-size: xx-large;
+  }
+
+  .navItems {
+    display: flex;
+  }
+
+  .navItems a {
+    color: #fff;
+    font-size: large;
+    padding-right: 2rem;
+    list-style: none;
+    text-decoration: none;
+
+    cursor: pointer;
+  }
+
+  .navItems a:hover {
+    color: #995aff;
+  }
+}
