@@ -1,0 +1,40 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding: 2rem 0rem;
+  background-color: #121212;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+
+  span {
+    color: #fff;
+    font-size: x-large;
+  }
+
+  .name {
+    color: #995aff;
+    font-size: xx-large;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .button {
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+
+    text-align: center;
+    font-size: larger;
+    text-decoration: none;
+    font-weight: 500;
+
+    color: #fff;
+    border: 2px solid #995aff;
+  }
+}
