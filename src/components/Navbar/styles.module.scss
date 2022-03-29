@@ -23,10 +23,12 @@
     list-style: none;
     text-decoration: none;
 
-    cursor: pointer;
-  }
+    transition: 0.3s;
 
-  .navItems a:hover {
-    color: #995aff;
+    cursor: pointer;
+
+    &:hover {
+      color: #995aff;
+    }
   }
 }

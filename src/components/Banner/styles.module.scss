@@ -22,11 +22,13 @@
     font-size: xx-large;
     font-weight: 500;
     text-transform: uppercase;
+
+    padding: 5px 0px;
   }
 
   .button {
     width: 50%;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 10px;
 
     text-align: center;
@@ -35,6 +37,23 @@
     font-weight: 500;
 
     color: #fff;
-    border: 2px solid #995aff;
+    border: 3px solid #995aff;
+    border-radius: 2px;
+
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #995aff;
+    }
+  }
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
   }
 }
