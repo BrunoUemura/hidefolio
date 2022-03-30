@@ -1,9 +1,9 @@
 import styles from "./styles.module.scss";
-import bannerImage from "../../assets/banner-image3.png";
+import bannerImage from "../../assets/images/banner-image3.png";
 
 export default function Banner() {
   return (
-    <div className={styles.banner}>
+    <div id="banner" className={styles.banner}>
       <div className={styles.information}>
         <span>Hi there 🖐️, I am</span>
         <span className={styles.name}>Bruno Hideki Uemura</span>

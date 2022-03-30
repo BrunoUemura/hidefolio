@@ -1,0 +1,60 @@
+.experiences {
+  display: flex;
+  justify-content: center;
+  width: var(--section-size);
+  padding: 5rem 0rem;
+  background-color: var(--second-black);
+}
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+
+  .job {
+    display: flex;
+    align-items: center;
+    background-color: var(--third-black);
+    margin-bottom: 10px;
+    border-left: 5px solid transparent;
+    padding: 5px;
+    cursor: pointer;
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    &:hover {
+      background-color: var(--fourth-black);
+      border-left: 5px solid var(--first-purple);
+    }
+  }
+
+  .jobDetail {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 10px;
+    color: var(--first-white);
+  }
+
+  .jobDetail .companyName {
+    color: var(--first-purple);
+  }
+
+  .jobDetail .jobDate {
+    color: var(--third-white);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .experiences {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+}

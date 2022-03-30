@@ -2,9 +2,8 @@
   display: flex;
   justify-content: center;
   width: var(--section-size);
-  padding: 2rem 0rem;
+  padding: 5rem 0rem;
   background-color: var(--third-black);
-  padding: 100px 0px;
 }
 
 .image {
@@ -12,25 +11,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  img {
-    border-left: 5px solid var(--first-purple);
-    border-bottom: 5px solid var(--first-purple);
-  }
+.image img {
+  width: 18rem;
+  border-left: 8px solid var(--first-purple);
 }
 
 .information {
   width: 50%;
-  padding-right: 20px;
+  padding-right: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   color: var(--first-white);
-
-  img {
-    width: 18rem;
-  }
 }
 
 .information span {
@@ -49,31 +44,61 @@
 
 .information .details {
   font-size: large;
+  text-align: justify;
 
   p {
     margin-bottom: 12px;
   }
 }
 
-.information .button {
-  color: var(--first-white);
-  background-color: var(--first-purple);
-  cursor: pointer;
+.information .buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-  border: none;
-  border-radius: 5px;
-  transition: 0.3s;
+  a {
+    cursor: pointer;
 
-  width: 10rem;
-  padding: 10px;
+    border: 3px solid var(--first-purple);
+    border-radius: 5px;
+    transition: 0.3s;
 
-  text-align: center;
-  font-size: larger;
-  text-decoration: none;
-  font-weight: 500;
+    width: 10rem;
+    padding: 10px;
 
-  &:hover {
-    background-color: var(--second-purple);
+    text-align: center;
+    font-size: larger;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .buttonOne {
+    color: var(--first-white);
+    background-color: var(--first-purple);
+
+    &:hover {
+      background-color: var(--second-purple);
+      border: 3px solid var(--second-purple);
+    }
+  }
+
+  .buttonTwo {
+    color: var(--first-white);
+    background-color: transparent;
+
+    &:hover {
+      background-color: var(--first-purple);
+    }
+  }
+
+  .buttonThree {
+    color: var(--first-white);
+    background-color: var(--first-purple);
+
+    &:hover {
+      background-color: var(--second-purple);
+      border: 3px solid var(--second-purple);
+    }
   }
 }
 
@@ -90,15 +115,16 @@
 
     justify-content: center;
     align-items: center;
+    padding: 3rem 0rem;
 
     img {
       width: 18rem;
-      padding-bottom: 50px;
     }
   }
 
   .information {
     width: 80%;
+    padding: 10px;
   }
 
   .information button {
@@ -113,6 +139,14 @@
 
   .image {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .information .buttons {
+    a {
+      width: 6rem;
+    }
   }
 }
 

@@ -1,6 +1,4 @@
-import About from "./components/About";
-import Banner from "./components/Banner";
-import Navbar from "./components/Navbar";
+import { Navbar, Banner, About, Skills, Experiences } from "./components";
 import styles from "./styles/App.module.scss";
 
 export default function App() {
@@ -9,6 +7,8 @@ export default function App() {
       <Navbar />
       <Banner />
       <About />
+      {/* <Skills /> */}
+      <Experiences />
     </div>
   );
 }

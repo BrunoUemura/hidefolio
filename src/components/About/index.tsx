@@ -1,16 +1,19 @@
 import styles from "./styles.module.scss";
-import aboutImage from "../../assets/about-image.png";
-import Pdf from "../../assets/documents/CV-PT-Bruno-Uemura.pdf";
+import aboutImage from "../../assets/images/about-image.png";
+import CVPdf from "../../assets/documents/CV-PT-Bruno-Uemura.pdf";
+
+const LINKEDIN_URL = "https://www.linkedin.com/in/bruno-uemura/";
+const GITHUB_URL = "https://github.com/BrunoUemura";
 
 export default function About() {
   return (
-    <div className={styles.about}>
+    <div id="about" className={styles.about}>
       <div className={styles.image}>
         <img src={aboutImage} alt="About Image" />
       </div>
       <div className={styles.information}>
         <span className={styles.title}>About me</span>
-        <span className={styles.location}>São Paulo, Brazil</span>
+        <span className={styles.location}>Campinas - SP, Brazil</span>
         <span className={styles.details}>
           <p>
             Software Engineer with experience in Backend development and Systems
@@ -27,9 +30,18 @@ export default function About() {
             the language and local culture.
           </p>
         </span>
-        <a className={styles.button} href={Pdf} target="_blank">
-          View CV
-        </a>
+
+        <div className={styles.buttons}>
+          <a className={styles.buttonOne} href={LINKEDIN_URL} target="_blank">
+            LinkedIn
+          </a>
+          <a className={styles.buttonTwo} href={CVPdf} target="_blank">
+            View CV
+          </a>
+          <a className={styles.buttonThree} href={GITHUB_URL} target="_blank">
+            GitHub
+          </a>
+        </div>
       </div>
     </div>
   );
