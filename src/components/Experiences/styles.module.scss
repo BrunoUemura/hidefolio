@@ -1,31 +1,33 @@
 .experiences {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: var(--section-size);
-  padding: 5rem 0rem;
+  height: max-content;
   background-color: var(--second-black);
+  padding: 2rem 0rem;
 }
 
 .title {
   font-size: xx-large;
+  font-weight: 500;
   color: var(--first-purple);
-  padding-bottom: 3rem;
+  padding: 2rem;
 }
 
 .details {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 .jobs {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   width: 40%;
-  padding: 0rem 5rem;
+  height: 100%;
+  padding-left: 2rem;
 
   .job {
     display: flex;
@@ -68,7 +70,10 @@
   display: flex;
   flex-direction: column;
   width: 60%;
-  padding: 0rem 5rem;
+  height: 100%;
+  margin-right: 2rem;
+  padding: 2rem;
+  background-color: var(--fourth-black);
 
   .companyName {
     color: var(--third-purple);
@@ -81,7 +86,7 @@
   }
 
   .jobDescription {
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     color: var(--first-white);
 
     p {
@@ -96,17 +101,29 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .experiences {
+    padding: 0rem;
+  }
+
   .details {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .jobs {
-    width: 80%;
-    padding-bottom: 3rem;
+    width: 90%;
+    padding: 0rem;
   }
 
   .jobDetail {
-    width: 80%;
+    width: 90%;
+    margin: 0rem;
+    padding: 1rem 0rem;
+
+    span {
+      padding: 0rem 2rem;
+    }
   }
 }
 
@@ -114,10 +131,4 @@
   .experiences {
     width: 100%;
   }
-}
-
-@media screen and (max-width: 530) {
-}
-
-@media screen and (max-width: 375px) {
 }
