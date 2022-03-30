@@ -7,7 +7,7 @@ export default function App() {
       <Navbar />
       <Banner />
       <About />
-      {/* <Skills /> */}
+      <Skills />
       <Experiences />
     </div>
   );
