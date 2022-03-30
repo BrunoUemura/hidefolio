@@ -144,8 +144,11 @@
 
 @media screen and (max-width: 500px) {
   .information .buttons {
+    flex-direction: column;
+
     a {
-      width: 6rem;
+      width: 100%;
+      margin-bottom: 0.5rem;
     }
   }
 }
