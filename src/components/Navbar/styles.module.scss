@@ -1,23 +1,31 @@
 .navbar {
-  width: 80%;
+  width: var(--section-size);
   height: 8rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #121212;
-  border-bottom: 1px solid #272727;
+
+  background-color: var(--second-black);
+  border-bottom: 3px solid var(--third-black);
 
   h1 {
-    color: #995aff;
+    color: var(--first-purple);
     font-size: xx-large;
+    cursor: pointer;
   }
 
   .navItems {
     display: flex;
   }
 
+  .navItems svg {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+  }
+
   .navItems a {
-    color: #fff;
+    color: var(--first-white);
     font-size: large;
     padding-right: 2rem;
     list-style: none;
@@ -28,7 +36,28 @@
     cursor: pointer;
 
     &:hover {
-      color: #995aff;
+      color: var(--first-purple);
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+
+    .navItems a {
+      display: none;
+    }
+
+    .navItems svg {
+      display: block;
+      color: var(--first-purple);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
   }
 }
