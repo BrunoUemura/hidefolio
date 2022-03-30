@@ -1,26 +1,12 @@
+import { MONTHS } from "../../util/enums";
 import { jobs } from "../../util/jobs";
 import styles from "./styles.module.scss";
-
-const months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
 
 export default function Experiences() {
   const formatDate = (date: string) => {
     const convertedDate = new Date(date);
     const monthNumber = convertedDate.getMonth();
-    const month = months[monthNumber];
+    const month = MONTHS[monthNumber];
     const year = convertedDate.getFullYear();
     return `${month}. ${year}`;
   };
