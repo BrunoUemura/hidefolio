@@ -65,6 +65,17 @@ export default function Experiences() {
             {jobs[selectedJob].companyName}
           </span>
           <span className={styles.jobTitle}>{jobs[selectedJob].title}</span>
+          <span className={styles.jobDate}>
+            {formatDate(jobs[selectedJob].startDate)} -{" "}
+            {jobs[selectedJob].endDate !== null
+              ? formatDate(String(jobs[selectedJob].endDate))
+              : "Current"}{" "}
+            •{" "}
+            {calculateMonths(
+              jobs[selectedJob].startDate,
+              jobs[selectedJob].endDate
+            )}
+          </span>
           <span className={styles.jobDescription}>
             {jobs[selectedJob].description.map((text) => (
               <p>{text}</p>
