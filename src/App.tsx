@@ -1,4 +1,11 @@
-import { Navbar, Banner, About, Skills, Experiences } from "./components";
+import {
+  Navbar,
+  Banner,
+  About,
+  Skills,
+  Experiences,
+  Projects,
+} from "./components";
 import styles from "./styles/App.module.scss";
 
 export default function App() {
@@ -9,6 +16,7 @@ export default function App() {
       <About />
       <Skills />
       <Experiences />
+      <Projects />
     </div>
   );
 }
