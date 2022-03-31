@@ -8,15 +8,6 @@
   background-color: var(--second-black);
 }
 
-.title {
-  font-size: xx-large;
-  font-weight: 500;
-  color: var(--first-color);
-  margin: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
 .projectsBox {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -40,16 +31,16 @@
     width: 100%;
   }
 
-  .project span {
+  .project .name {
+    font-size: x-large;
+    color: var(--first-white);
+  }
+
+  .project .area {
     text-align: left;
     margin-top: 0.2rem;
     color: var(--third-white);
     font-size: large;
-  }
-
-  .project .name {
-    font-size: x-large;
-    color: var(--first-white);
   }
 
   .project .buttons {
@@ -62,7 +53,8 @@
       background-color: var(--first-color);
       color: var(--first-white);
       text-decoration: none;
-      padding: 0.5rem 4rem;
+      font-weight: 400;
+      padding: 0.5rem 2rem;
       border-radius: 0.3rem;
 
       &:hover {

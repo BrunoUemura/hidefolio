@@ -37,7 +37,7 @@ export default function Experiences() {
   return (
     <div id="experiences" className={styles.experiences}>
       <div className={styles.title}>
-        <span>Experiences</span>
+        <h1>Experiences</h1>
       </div>
       <div className={styles.details}>
         <div className={styles.jobs}>

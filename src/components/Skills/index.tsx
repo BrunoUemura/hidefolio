@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <div id="skills" className={styles.skills}>
       <div className={styles.title}>
-        <span>Skills</span>
+        <h1>Skills</h1>
       </div>
       <div className={styles.skillsBox}>
         {skills.map((skill) => (

@@ -34,3 +34,12 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
+
+body h1 {
+  color: var(--first-white);
+  font-size: xx-large;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+  font-weight: 300;
+}

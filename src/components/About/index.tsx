@@ -1,15 +1,12 @@
 import styles from "./styles.module.scss";
 import aboutImage from "../../assets/images/about-image.png";
-import CVPdf from "../../assets/documents/CV-PT-Bruno-Uemura.pdf";
-
-const LINKEDIN_URL = "https://www.linkedin.com/in/bruno-uemura/";
-const GITHUB_URL = "https://github.com/BrunoUemura";
+import { externalLinks } from "../../util/externalLinks";
 
 export default function About() {
   return (
     <div id="about" className={styles.about}>
       <div className={styles.title}>
-        <span>About me</span>
+        <h1>About me</h1>
       </div>
       <div className={styles.details}>
         <div className={styles.image}>
@@ -33,17 +30,12 @@ export default function About() {
               with the language and local culture.
             </p>
           </span>
-
           <div className={styles.buttons}>
-            <a className={styles.buttonOne} href={LINKEDIN_URL} target="_blank">
-              LinkedIn
-            </a>
-            <a className={styles.buttonTwo} href={CVPdf} target="_blank">
-              View CV
-            </a>
-            <a className={styles.buttonThree} href={GITHUB_URL} target="_blank">
-              GitHub
-            </a>
+            {externalLinks.map((link) => (
+              <a href={link.href} target="_blank">
+                {link.icon}
+              </a>
+            ))}
           </div>
         </div>
       </div>

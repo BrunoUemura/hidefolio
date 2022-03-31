@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <h1>HideFolio</h1>
+      <span>HideFolio</span>
       <div className={styles.navItems}>
         <GiHamburgerMenu className={styles.hamburger} />
 

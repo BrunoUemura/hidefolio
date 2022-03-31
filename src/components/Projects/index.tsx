@@ -6,14 +6,14 @@ export default function Projects() {
   return (
     <div className={styles.projects}>
       <div className={styles.title}>
-        <span>Projects</span>
+        <h1>Projects</h1>
       </div>
       <div className={styles.projectsBox}>
         {projects.map((project, index) => (
           <div className={styles.project} key={index}>
             <img src={project.image} alt={project.name} />
-            <span className={styles.name}>{project.name}</span>
-            <span>{project.area}</span>
+            <p className={styles.name}>{project.name}</p>
+            <p className={styles.area}>{project.area}</p>
             <div className={styles.buttons}>
               <a href={project.repo} target="_blank">
                 Repo

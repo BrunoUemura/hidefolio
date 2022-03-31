@@ -8,15 +8,6 @@
   padding: 3rem 0rem;
 }
 
-.title {
-  font-size: xx-large;
-  font-weight: 500;
-  color: var(--first-color);
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
 .details {
   display: flex;
   flex-direction: row;
@@ -61,7 +52,11 @@
   }
 
   .jobInformation .companyName {
-    color: var(--first-color);
+    color: var(--first-white);
+  }
+
+  .jobInformation .jobTitle {
+    color: var(--second-white);
   }
 
   .jobInformation .jobDate {
@@ -79,13 +74,17 @@
   background-color: var(--fourth-black);
 
   .companyName {
-    color: var(--third-color);
-    font-size: x-large;
+    color: var(--first-white);
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
   .jobTitle {
-    color: var(--first-color);
+    color: var(--second-color);
     font-size: x-large;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
   .jobDescription {
