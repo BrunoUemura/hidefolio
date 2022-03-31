@@ -13,17 +13,15 @@
   font-weight: 500;
   color: var(--first-color);
   margin: 2rem;
-
-  span {
-    border-bottom: 0.2rem solid var(--first-color);
-  }
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .projectsBox {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  width: 90%;
+  width: 80%;
 
   .project {
     display: flex;
@@ -33,7 +31,7 @@
     border-radius: 5px;
     padding: 1rem 0.5rem;
 
-    width: 95%;
+    width: 90%;
 
     cursor: pointer;
   }
@@ -77,10 +75,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-
-  .project .tag .tagsNames {
-    line-break: normal;
   }
 }
 

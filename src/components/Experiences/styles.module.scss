@@ -5,18 +5,16 @@
   width: var(--section-size);
   height: max-content;
   background-color: var(--third-black);
-  padding: 2rem 0rem;
+  padding: 3rem 0rem;
 }
 
 .title {
   font-size: xx-large;
   font-weight: 500;
   color: var(--first-color);
-  margin: 2rem;
-
-  span {
-    border-bottom: 0.2rem solid var(--first-color);
-  }
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .details {

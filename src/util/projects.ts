@@ -1,6 +1,7 @@
 import hidefolioImage from "../assets/images/hidefolio-image.png";
 import pokedexImage from "../assets/images/pokedex-image.png";
 import todoappImage from "../assets/images/todoapp-image.png";
+import geeklistImage from "../assets/images/geeklist-image.png";
 
 export const projects = [
   {
@@ -21,7 +22,7 @@ export const projects = [
   },
   {
     name: "TODO App",
-    area: "FullStack",
+    area: "Full Stack",
     repo: "https://github.com/BrunoUemura/todo-app",
     demo: "https://todo-app-dun-nine.vercel.app/",
     image: todoappImage,
@@ -32,11 +33,24 @@ export const projects = [
       "SASS",
       "Prisma",
       "MongoDB",
+      "Serverless",
+    ],
+  },
+  {
+    name: "Geek List",
+    area: "Full Stack",
+    repo: "https://github.chttps://github.com/stars/BrunoUemura/lists/geek-listom/BrunoUemura/todo-app",
+    demo: "https://list-frontend-app.vercel.app/",
+    image: geeklistImage,
+    tags: [
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Docker",
       "React",
       "Next.js",
-      "SASS",
-      "Prisma",
-      "MongoDB",
+      "TailwindCSS",
     ],
   },
 ];
