@@ -1,133 +1,149 @@
 .about {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: var(--section-size);
-  padding: 5rem 0rem;
+  padding: 2rem 0rem;
   background-color: var(--third-black);
 }
 
-.image {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image img {
-  width: 18rem;
-  border-left: 8px solid var(--first-purple);
-}
-
-.information {
-  width: 50%;
-  padding-right: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  color: var(--first-white);
-}
-
-.information span {
-  margin-bottom: 20px;
-}
-
-.information .title {
+.title {
+  color: var(--first-color);
   font-size: xx-large;
-  color: var(--first-purple);
-}
+  text-transform: uppercase;
 
-.information .location {
-  font-size: x-large;
-  color: var(--third-purple);
-}
-
-.information .details {
-  font-size: large;
-  text-align: justify;
-
-  p {
-    margin-bottom: 12px;
+  span {
+    border-bottom: 0.2rem solid var(--first-color);
   }
 }
 
-.information .buttons {
+.details {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
 
-  a {
-    cursor: pointer;
-
-    border: 3px solid var(--first-purple);
-    border-radius: 5px;
-    transition: 0.3s;
-
-    width: 10rem;
-    padding: 10px;
-
-    text-align: center;
-    font-size: larger;
-    text-decoration: none;
-    font-weight: 500;
+  .image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .buttonOne {
-    color: var(--first-white);
-    background-color: var(--first-purple);
+  .image img {
+    width: 18rem;
+    border-left: 8px solid var(--first-color);
+  }
 
-    &:hover {
-      background-color: var(--second-purple);
-      border: 3px solid var(--second-purple);
+  .information {
+    width: 50%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: var(--first-white);
+  }
+
+  .information span {
+    margin-bottom: 20px;
+  }
+
+  .information .title {
+    font-size: xx-large;
+    color: var(--first-color);
+  }
+
+  .information .location {
+    font-size: x-large;
+    color: var(--third-color);
+  }
+
+  .information .aboutMeDetails {
+    font-size: large;
+    text-align: justify;
+
+    p {
+      margin-bottom: 12px;
     }
   }
 
-  .buttonTwo {
-    color: var(--first-white);
-    background-color: transparent;
+  .information .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    &:hover {
-      background-color: var(--first-purple);
+    a {
+      cursor: pointer;
+
+      border: 3px solid var(--first-color);
+      border-radius: 5px;
+      transition: 0.3s;
+
+      width: 10rem;
+      padding: 10px;
+
+      text-align: center;
+      font-size: larger;
+      text-decoration: none;
+      font-weight: 500;
     }
-  }
 
-  .buttonThree {
-    color: var(--first-white);
-    background-color: var(--first-purple);
+    .buttonOne {
+      color: var(--first-white);
+      background-color: var(--first-color);
 
-    &:hover {
-      background-color: var(--second-purple);
-      border: 3px solid var(--second-purple);
+      &:hover {
+        background-color: var(--second-color);
+        border: 3px solid var(--second-color);
+      }
+    }
+
+    .buttonTwo {
+      color: var(--first-white);
+      background-color: transparent;
+
+      &:hover {
+        background-color: var(--first-color);
+      }
+    }
+
+    .buttonThree {
+      color: var(--first-white);
+      background-color: var(--first-color);
+
+      &:hover {
+        background-color: var(--second-color);
+        border: 3px solid var(--second-color);
+      }
     }
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .about {
+  .details {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 0px;
   }
 
-  .image {
+  .details .image {
     width: 100%;
 
     justify-content: center;
     align-items: center;
-    padding: 3rem 0rem;
+    padding: 2rem 0rem;
 
     img {
       width: 18rem;
     }
   }
 
-  .information {
+  .details .information {
     width: 80%;
     padding: 10px;
   }
 
-  .information button {
+  .details .information button {
     width: 100%;
   }
 }
@@ -137,13 +153,13 @@
     width: 100%;
   }
 
-  .image {
+  .details .image {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .information .buttons {
+  .details .information .buttons {
     flex-direction: column;
 
     a {
@@ -154,7 +170,7 @@
 }
 
 @media screen and (max-width: 375px) {
-  .information .title {
+  .details .information .title {
     font-size: x-large;
   }
 }

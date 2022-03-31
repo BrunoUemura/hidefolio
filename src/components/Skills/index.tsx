@@ -4,7 +4,9 @@ import styles from "./styles.module.scss";
 export default function Skills() {
   return (
     <div id="skills" className={styles.skills}>
-      <span className={styles.title}>Skills</span>
+      <div className={styles.title}>
+        <span>Skills</span>
+      </div>
       <div className={styles.skillsBox}>
         {skills.map((skill) => (
           <div key={skill.name} className={styles.skill}>

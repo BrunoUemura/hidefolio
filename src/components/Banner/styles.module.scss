@@ -20,7 +20,7 @@
   }
 
   .name {
-    color: var(--first-purple);
+    color: var(--first-color);
     font-size: xx-large;
     font-weight: 500;
     text-transform: uppercase;
@@ -43,13 +43,13 @@
     font-weight: 500;
 
     color: var(--first-white);
-    background-color: var(--first-purple);
+    background-color: var(--first-color);
     border-radius: 5px;
 
     transition: 0.3s;
 
     &:hover {
-      background-color: var(--second-purple);
+      background-color: var(--second-color);
     }
   }
 }

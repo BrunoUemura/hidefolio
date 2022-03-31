@@ -1,6 +1,7 @@
 .experiences {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: var(--section-size);
   height: max-content;
   background-color: var(--third-black);
@@ -10,8 +11,12 @@
 .title {
   font-size: xx-large;
   font-weight: 500;
-  color: var(--first-purple);
-  padding: 2rem;
+  color: var(--first-color);
+  margin: 2rem;
+
+  span {
+    border-bottom: 0.2rem solid var(--first-color);
+  }
 }
 
 .details {
@@ -45,7 +50,7 @@
 
     &:hover {
       background-color: var(--fourth-black);
-      border-left: 5px solid var(--first-purple);
+      border-left: 5px solid var(--first-color);
     }
   }
 
@@ -58,7 +63,7 @@
   }
 
   .jobInformation .companyName {
-    color: var(--first-purple);
+    color: var(--first-color);
   }
 
   .jobInformation .jobDate {
@@ -76,12 +81,12 @@
   background-color: var(--fourth-black);
 
   .companyName {
-    color: var(--third-purple);
+    color: var(--third-color);
     font-size: x-large;
   }
 
   .jobTitle {
-    color: var(--first-purple);
+    color: var(--first-color);
     font-size: x-large;
   }
 

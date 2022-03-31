@@ -9,7 +9,7 @@
   background-color: var(--third-black);
 
   h1 {
-    color: var(--first-purple);
+    color: var(--first-color);
     font-size: xx-large;
     cursor: pointer;
   }
@@ -36,7 +36,7 @@
     cursor: pointer;
 
     &:hover {
-      color: var(--first-purple);
+      color: var(--first-color);
     }
   }
 }
@@ -51,7 +51,7 @@
 
     .navItems svg {
       display: block;
-      color: var(--first-purple);
+      color: var(--first-color);
     }
   }
 }
