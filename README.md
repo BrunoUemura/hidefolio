@@ -2,7 +2,7 @@
 
 This is my simple portfolio built with:
 
-- Vite
+- Vite.js
 - React
-- TypeScri
-- Sass
+- TypeScript
+- SASS
