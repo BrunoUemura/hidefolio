@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  width: 80%;
+  width: 90%;
 
   .project {
     display: flex;
@@ -21,8 +21,6 @@
     background-color: var(--fourth-black);
     border-radius: 5px;
     padding: 1rem 0.5rem;
-
-    width: 90%;
 
     cursor: pointer;
   }

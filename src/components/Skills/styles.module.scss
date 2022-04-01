@@ -12,7 +12,6 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
-  margin: 0rem 5rem;
 
   .skill {
     text-align: center;
@@ -43,12 +42,14 @@
 
   .skillsBox {
     grid-template-columns: repeat(4, 1fr);
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 520px) {
   .skillsBox {
     grid-template-columns: repeat(3, 1fr);
+    width: 90%;
   }
 }
 
