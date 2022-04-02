@@ -1,4 +1,4 @@
-import { navItems } from "../../util/nav-items";
+import { navItems } from "../../util/navItems";
 import styles from "./styles.module.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 

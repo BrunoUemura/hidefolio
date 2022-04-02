@@ -1,0 +1,107 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--fourth-black);
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+
+  cursor: pointer;
+}
+
+.project img {
+  width: 100%;
+}
+
+.name {
+  text-align: center;
+  font-size: x-large;
+  color: var(--first-white);
+  letter-spacing: 0.1rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5rem 0rem;
+
+  p {
+    text-align: left;
+    color: var(--second-white);
+    font-size: large;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+
+  a {
+    background-color: var(--first-color);
+    color: var(--first-white);
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.5rem 2rem;
+    border-radius: 0.3rem;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.tags span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+}
+
+.languages p {
+  color: var(--first-white);
+  margin-bottom: 0.3rem;
+}
+
+.languages div span {
+  text-align: center;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 1rem;
+  font-size: small;
+  color: var(--first-white);
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+}
+
+.tools p {
+  color: var(--first-white);
+  margin-bottom: 0.3rem;
+}
+
+.tools div {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.tools div span {
+  text-align: center;
+  font-weight: 500;
+  padding: 0.2rem 0.4rem;
+  border-radius: 1rem;
+  font-size: small;
+  color: var(--first-white);
+  background-color: #616161;
+}
