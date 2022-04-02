@@ -21,7 +21,10 @@
     cursor: pointer;
 
     &:hover {
-      transform: scale(1.05);
+      img,
+      p {
+        transform: scale(1.05);
+      }
     }
   }
 
